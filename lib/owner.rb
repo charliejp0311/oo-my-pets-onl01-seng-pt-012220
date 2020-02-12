@@ -9,5 +9,8 @@ class Owner
     @species = species
   end
 
-
+  def say_species
+    puts self.species
+  end
+  
 end

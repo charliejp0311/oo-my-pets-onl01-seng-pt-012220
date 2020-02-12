@@ -64,18 +64,18 @@ class Owner
 
   def sell_pets
     Cat.all.each do |cat|
-      if cat.owner == self 
+      if cat.owner == self
         cat.mood = "nervous"
-        
+
       end
     end
     Dog.all.each do |dog|
       if dog.owner == self
         dog.mood = "nervous"
-        
+
       end
-      
+
     end
-  end 
+  end
 
 end

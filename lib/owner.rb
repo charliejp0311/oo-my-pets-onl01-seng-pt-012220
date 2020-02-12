@@ -2,11 +2,12 @@ require "pry"
 class Owner
   # code goes here
 
-  attr_reader :name, :species
+  attr_reader :name, :species, :pets 
   @@all = []
   def initialize(name, species = "human")
     @name = name
     @species = species
+    @pets = []
     save
   end
 
@@ -39,11 +40,13 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.new(name, self)
+    new_cat = Cat.new(name, self)
+    @pets << new_cat
   end
 
   def buy_dog(name)
-    Dog.new(name, self)
+    new_dog = Dog.new(name, self)
+    @pets << new_dog
   end
 
   def walk_dogs

@@ -2,7 +2,7 @@ require "pry"
 class Owner
   # code goes here
 
-  attr_reader :name, :species, :pets
+  attr_reader :name, :species
   @@all = []
   def initialize(name, species = "human")
     @name = name
@@ -79,6 +79,10 @@ class Owner
       end
 
     end
+  end
+
+  def list_pets
+    @pets 
   end
 
 end

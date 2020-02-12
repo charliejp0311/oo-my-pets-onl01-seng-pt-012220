@@ -1,7 +1,8 @@
 require "pry"
 class Owner
   # code goes here
-  attr_accessor :name
+  
+  attr_reader :name
   def initialize(name)
     @name = name
   end

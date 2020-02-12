@@ -7,7 +7,6 @@ class Owner
   def initialize(name, species = "human")
     @name = name
     @species = species
-    @pets = []
     save
   end
 
@@ -41,12 +40,10 @@ class Owner
 
   def buy_cat(name)
     new_cat = Cat.new(name, self)
-    @pets << new_cat
   end
 
   def buy_dog(name)
     new_dog = Dog.new(name, self)
-    @pets << new_dog
   end
 
   def walk_dogs

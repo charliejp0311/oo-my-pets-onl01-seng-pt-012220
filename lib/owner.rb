@@ -12,5 +12,5 @@ class Owner
   def say_species
     puts self.species
   end
-  
+
 end

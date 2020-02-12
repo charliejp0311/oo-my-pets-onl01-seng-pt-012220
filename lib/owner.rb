@@ -82,7 +82,7 @@ class Owner
   end
 
   def list_pets
-    @pets 
+    @pets
   end
 
 end

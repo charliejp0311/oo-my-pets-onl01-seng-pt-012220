@@ -9,5 +9,5 @@ class Owner
     @species = species
   end
 
-  
+
 end
